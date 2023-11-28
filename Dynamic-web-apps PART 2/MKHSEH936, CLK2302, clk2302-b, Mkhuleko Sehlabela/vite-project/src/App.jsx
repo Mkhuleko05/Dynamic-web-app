@@ -1,41 +1,35 @@
-import React, { useState } from 'react';
-import Preview from './Components/Previews';
-import Navbar from './Components/Navbar';
-import Login from './Components/Login';
-import Carousel from './Components/Hero';
-import { supabase } from "./SupabaseClient";
-import SupabaseClient from "./SupabaseClient";
-import './Components/App.css';
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
+function App() {
+  const [count, setCount] = useState(0)
 
-
-const App = () => {
-  const [throwSignUp, setThrowSignUp] = useState("signUpPhase");
-  React.useEffect(() => {
-    const authListener = supabase.auth.onAuthStateChange((event, session) => {
-      if (event === "SIGNED_IN" && session) {
-        console.log("User signed in successfully:", session.user.email);
-        setThrowSignUp("PreviewPhase");
-      }
-    });
-
-    return () => {
-      authListener.unsubscribe;
-    };
-  }, []);
   return (
-    <div>
-    {throwSignUp === 'signUpPhase' && <SupabaseClient />}
-      {throwSignUp === 'PreviewPhase' &&
-    <div>
-      
-      <Navbar />
-      <Carousel />
-      <Preview />
-      
-    </div>
-  }
-  </div>
-  );
+    <>
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
 }
+
 export default App
