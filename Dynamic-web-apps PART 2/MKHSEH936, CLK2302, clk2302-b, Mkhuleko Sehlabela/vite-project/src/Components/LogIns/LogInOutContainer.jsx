@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import SignUp from "./SignUp"
 import SignIn from "./SignIn"
+import React from 'react';
 
 
 
