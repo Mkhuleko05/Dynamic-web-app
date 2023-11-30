@@ -50,7 +50,7 @@ function DisplayCard({
       flexDirection: "column",
       position: "relative",
       backgroundImage:
-        "url(https://images.rawpixel.com/image_600/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Y5MDQtbnVubnktMDA0LWFfMi5qcGc.jpg)",
+        "url(https://resources.rawpixel.com/image_transparent_png_450/cmF3cGl4ZWwtZGVzaWduLXByb2Q6OmRlc2lnbi9wcmV2aWV3L3Jhd3BpeGVsLzAxZ2s2dHJtYnpuZ3kxY3AwbnhndHowYW41LWhvdmVyLWRlZmF1bHQucG5n.png?v=1698118798)",
       padding: "15px",
       margin: "15px",
       ItemsAlign: "center",

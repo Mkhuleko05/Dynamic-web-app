@@ -69,7 +69,7 @@ const handleToggleFavorite = (showId) => {
   const FaveStyles = {
     Body: {
       backgroundImage:
-        "url(https://images.rawpixel.com/image_600/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Y5MDQtbnVubnktMDA0LWFfMi5qcGc.jpg)",
+        "url(https://us.123rf.com/450wm/nanastudio/nanastudio1903/nanastudio190301015/119463669-headphones-on-dark-wooden-background-vintage-style.jpg?ver=6)",
       paddingLeft: "40px",
       color: "white",
     },

@@ -60,7 +60,7 @@ const CarouselComponent = () => {
 
     Carousel: {
       backgroundImage:
-        "url(https://images.rawpixel.com/image_600/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Y5MDQtbnVubnktMDA0LWFfMi5qcGc.jpg)",
+        "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyoAJMExJ7RTCIk9RUxDtr39iteqURmiLqdQmfnFSHyl5qnmfs5VfCjgys0Xoj7YSBr1g&usqp=CAU)",
 
       backgroundSize: "cover",
       backgroundPosition: "center",
